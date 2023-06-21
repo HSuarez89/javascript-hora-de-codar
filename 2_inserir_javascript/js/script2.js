@@ -1,0 +1,1 @@
+console.log("Scrip do body via arquivo externo.")
