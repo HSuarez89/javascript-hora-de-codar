@@ -1,3 +1,5 @@
+var indice = 0
+
 //adicionando tarefa
 function adicionaTarefa(){
     tarefa = document.querySelector('#task-title').value
@@ -12,9 +14,22 @@ function criarTarefa(){
     var elemento = document.querySelector('.template').innerHTML //copio o elemento li que será o template
     var elementoLista = document.createElement('li') // crio o card que receberá a tarefa
     elementoLista.innerHTML = elemento
-    lista.appendChild(elementoLista)
+    lista.appendChild(elementoLista) //
+    var num = contarIndice()
+    elementoLista.setAttribute('id', num)
+    console.log(tarefa)
 }
 
+//função para contar o índice
+function contarIndice(){
+    if(indice == 0){
+        indice ++
+        return 0
+    }else {
+        indice ++
+        return indice - 1
+    }
+}
 
 
 const botao = document.querySelector('#add-btn')
