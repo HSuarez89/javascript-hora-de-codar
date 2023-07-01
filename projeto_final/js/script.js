@@ -16,8 +16,8 @@ function criarTarefa(){
     elementoLista.innerHTML = elemento
     lista.appendChild(elementoLista) //
     var num = contarIndice()
-    elementoLista.setAttribute('id', num)
-    console.log(tarefa)
+    elementoLista.setAttribute('id', 'li'+num)
+    var tarefaFinal = document.querySelector('#li'+num)
 }
 
 //função para contar o índice
