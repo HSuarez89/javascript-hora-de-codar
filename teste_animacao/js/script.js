@@ -9,6 +9,7 @@ function visivel() {
 }
 
 function movimento(){
-    aviao.style.right = 1200 + "px"
+    var janela = window.innerWidth
+    aviao.style.right = janela - 604 + "px"
     aviao.style.opacity = 1
 }
